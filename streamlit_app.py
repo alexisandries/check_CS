@@ -73,7 +73,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Vérification des communications structurées (OGM / Mededeling)")
+st.title("Vérification des communications structurées")
 
 st.markdown(
     """
