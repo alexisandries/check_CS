@@ -75,7 +75,7 @@ st.set_page_config(
 
 st.title("Vérification des communications structurées")
 
-st.markdown(
+st.write(
     """
 Collez ci-dessous une **colonne Excel** contenant vos communications structurées  
 (une valeur par ligne, avec ou sans `+++`, `/`, espaces, etc.).
@@ -180,7 +180,7 @@ if st.button("Lancer la vérification"):
                     st.dataframe(df_invalid, use_container_width=True)
 
                     # Option : liste brute des digits invalides
-                    st.markdown(
+                    st.write(
                         "Numéros (digits) invalides : " +
                         ", ".join(df_invalid["digits"].tolist())
                     )
